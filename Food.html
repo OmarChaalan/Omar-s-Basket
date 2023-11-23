@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Omar's Basket</title>
+    <script
+      src="https://kit.fontawesome.com/9177fa10d6.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: pink;
+      }
+
+      header {
+        background-color: darkmagenta;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo img {
+        height: 100px;
+        width: auto;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        margin-right: 100px;
+        justify-content: center;
+        text-align: center;
+      }
+
+      li {
+        margin-right: 20px;
+      }
+
+      li a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      li a:hover {
+        color: lightpink;
+      }
+
+      .color {
+        color: darkmagenta;
+        font-family: cursive;
+        font-size: 125%;
+      }
+
+      .Font {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      i {
+        padding: 5px;
+      }
+
+      ul i:hover {
+        color: pink;
+      }
+
+      p img {
+        width: 45%;
+        float: right;
+      }
+
+      .orderButton {
+        text-decoration: none;
+        background-color: darkmagenta;
+        padding: 10px;
+        font-size: medium;
+        font-style: italic;
+        border-style: solid;
+      }
+
+      .orderButton a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .orderButton:hover {
+        font-size: larger;
+      }
+
+      .menuButton2 {
+        text-decoration: none;
+        background-color: darkmagenta;
+        padding: 10px;
+        font-size: medium;
+        font-style: italic;
+        border-style: solid;
+      }
+
+      .menuButton2 a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .menuButton2:hover {
+        font-size: larger;
+      }
+
+      form {
+      display: flex;
+      }
+
+      label {
+      display: block;
+      }
+
+      input {
+      width: 180%;
+      padding: 3%;
+      }
+
+      .border {
+        border-style: outset;
+        border-color: pink;
+      }
+
+      .block {
+        display: inline-block;
+        border-style: outset;
+        border-color: darkmagenta;
+        width: 280px;
+        height: 480px;
+      }
+
+      .container  {
+     text-align: center;
+     display: inline;
+     margin-right: 38px;
+      }
+
+     .block img {
+    width: 250px;
+    height: 200px;
+    padding-top: 20px;
+    }
+
+    .food {
+      color: darkmagenta;
+    }
+
+    .price {
+      font-weight: bold;
+      font-size: large;
+    }
+
+    p i {
+      color: darkmagenta;
+    }
+
+    .menuButton {
+      background-color: darkmagenta;
+      width: 50%;
+      padding: 3px;
+      border-style: inset;
+      border-color: black;
+    }
+
+    .menuButton a {
+      color: black;
+      text-decoration: none;
+      font-size: 125%;
+    }
+
+    .menuButton:hover {
+      font-size: none;
+    }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img
+            src="/Images/Omar's Basket-logos_black2.png"
+            alt=""
+            width="200px"
+            height="100px"
+          />
+        </div>
+        <ul>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Menu">Menu</a></li>
+          <li><a href="#Gallery">Gallery</a></li>
+          <li><a href="#Review">Review</a></li>
+          <li><a href="#Order">Order</a></li>
+          <li><a href="#SignIn">Sign In</a></li>
+          <li><a href="#SignUp">Sign Up</a></li>
+        </ul>
+
+        <ul>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-heart"></i>
+          <i class="fa-solid fa-cart-shopping"></i>
+        </ul>
+      </nav>
+    </header>
+
+    <main style="margin: 100px">
+      <section style="float: left; margin-top: 50px">
+        <span class="Font" id="Home">
+          <h1>
+            <p>Get our <span class="color">Food</span> in an Easy Way</p>
+          </h1>
+          <p>
+            Browse through the menu. featuring a diverse range of delightful options. 
+            <br>
+            From appetizers to main courses. there's something for everyone.
+            <br>
+            <br>
+            <button class="menuButton2"><a href="#Menu">Explore The Menu!</a></button>
+            <br />
+            <br>
+            After you are done exploring the everything on the menu, select what you would
+            <br>
+            like to order. After you are done selecting, review your order incase you want to edit it.
+            <br>
+            After you are done reviewing what you would like to order, click the Order Now button!
+          </p>
+
+          <button type="button" class="orderButton"><a href="#Order">Order Now!</a></button>
+        </span>
+      </section>
+
+      <section>
+        <p><img src="/Images/main_img 1.png" /></p>
+      </section>
+
+        <section>
+          <img
+            src="/Images/Food-Plate 1.png"
+            style="float: left; width: 55%; height: 55%; margin-top: 400px;"
+          />
+        </section>
+
+        <section style="float: right; margin-top: 300px;">
+          <span class="Font">
+          <h1>
+            <p id="About" style="font-size: 200%;"><span class="color">About Us</span></p>
+          </h1>
+
+          <p>
+            <h3>Welcome to Omar's Basket, where we offer great hospitality 
+            <br>
+            and customer treatment.
+          </h3>
+        </p>
+
+          <h2>
+            Why Choose Us?
+          </h2>
+
+          <p>Our chefs are passionate about their craft. We think that high-quality 
+            <br>
+            ingredients have immense power. We guarantee freshness and uphold our 
+            <br>
+            community's values by sourcing locally. We offer warm and comfortable
+            <br>
+            hospitality in our restaraunt, you will very welcomed by our team!
+            <br>
+            Your well-being is our first priority. We create a dining environment 
+            <br>
+            you can trust by upholding the most strict safety and hygiene standards.
+          </p>
+        </span>
+        </section>
+
+        <section style="float:left; margin-top: 200px; margin-right: 350px; margin-left: 500px;" >
+          <span class="Font" id="Menu">
+            <h1>
+              <p style="margin-left: 8px; font-size: 200%;"><span class="color">Our Menu</span></p>
+            </h1>
+            </span>
+            </section>
+
+            <section>
+          <div class="container">
+            <div class="block">
+              <img src="/Images/MicrosoftTeams-image5.png">
+              <p><h2 class="food">Burger</h2></p>
+            <p>Prepare your taste buds for a symphony of flavors as you embark on a journey with our Burger.</p>
+            <p class="price">$6.99</p>
+            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></i></p>
+            <button type="button" class="menuButton"><a href="#Order">Order Now!</a></button></p>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="block">
+              <img src="/Images/steak2.jpg">
+              <p><h2 class="food">Steak</h2></p>
+            <p>Elevate your dining experience with our exquisite Steak, a masterpiece that promises to delight your taste buds.</p>
+            <p class="price">$8.99</p>
+            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+            <button type="button" class="menuButton"><a href="#Order">Order Now!</a></button></p>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="block">
+              <img src="/Images/ramen2">
+              <p><h2 class="food">Ramen</h2></p>
+            <p>Join us with a bowl of Ramen, a culinary masterpiece that takes the traditional Japanese comfort food to new heights</p>
+            <p class="price">$4.99</p>
+            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i></p>
+            <button type="button" class="menuButton"><a href="#Order">Order Now!</a></button></p>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="block">
+              <img src="/Images/kebab.jpg">
+              <p><h2 class="food">Kebab</h2></p>
+            <p>Dive into our extraordinary Kebabs, a feast that captures the essence of grilled perfection and exotic flavors.</p>
+            <p class="price">$10.99</p>
+            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></p>
+            <button type="button" class="menuButton"><a href="#Order">Order Now!</a></button></p>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="block" style="margin-top: 10px;">
+              <img src="/Images/Nuggets.jpg">
+              <p><h2 class="food">Chicken Nuggets</h2></p>
+            <p>Try our delicious chicken nuggets it will satisfy your craving for comfort food. They are crispy perfection. </p>
+            <p class="price">$4.99</p>
+            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+            <button type="button" class="menuButton"><a href="#Order">Order Now!</a></button></p>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="block" style="margin-top: 10px;">
+              <img src="/Images/fries.jfif">
+              <p><h2 class="food">Fries</h2></p>
+            <p>Get ready to try our hand-cut fries, a culinary sensation that combines simplicity with perfection.</p>
+            <p class="price">$2.99</p>
+            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+            <button type="button" class="menuButton"><a href="#Order">Order Now!</a></button></p>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="block" style="margin-top: 10px;">
+              <img src="/Images/drink.jpg">
+              <p><h2 class="food">Drinks</h2></p>
+            <p>Normal Drinks, nothing special here. Water, Apple Juice, Orange Juice, Pepsi, 7Up, Cola, Sprite, and Miranda.</p>
+            <p class="price">$1.99</p>
+            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+            <button type="button" class="menuButton"><a href="#Order">Order Now!</a></button></p>
+            </div>
+          </div>
+
+          </section>
+
+        <section style="float: right; margin-right: 500px; margin-top: 200px;">
+          <span class="Font">
+          <h1>
+            <p id="Order"><span class="color" style="font-size: 200%;">Order Now</span></p>
+          </h1>
+        </span>
+          </section>
+
+        <section>
+          
+          <img src="/Images/MicrosoftTeams-image.png" style="float:left; width:50%; height: 50%;">
+        </section>
+
+        <section style="float: right; margin-top: 225px; margin-right: 70px;">
+          <form>
+            <div style="margin-right: 160px;">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Your Full Name">
+            </div>
+        
+            <div>
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" placeholder="name@domain.com">
+            </div>
+        </form>
+
+
+        <form>
+          <div style="margin-top: 20px; margin-right: 160px;">
+            <label for="telephone">Your Number</label>
+            <input type="tel" name="" id="telephone" placeholder="07(7/8/9)*******">
+          </div>
+
+          <div style="margin-top: 20px;">
+            <label for="number">How Many Orders</label>
+            <input type="number" name="" id="number" min="1" placeholder="How many orders do you want to make?">
+          </div>
+        </form>
+
+        <form>
+          <div style="margin-top: 20px; margin-right: 160px;">
+            <label for="order">What's your Order</label>
+            <input type="text" name="" id="order" placeholder="Food Name">
+            </div>
+
+            <div style="margin-top: 20px;">
+              <label for="address">Address</label>
+              <input type="text" name="" id="address" placeholder="Your Address">
+            </div>
+        </form>
+
+        <p>
+        <button type="button" class="orderButton"><a href="#Home">Order Now ></a></button>
+        </p>
+        </section>
+    </main>
+  </body>
+</html>
